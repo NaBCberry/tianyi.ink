@@ -1,15 +1,14 @@
 ---
 import Link from '~/components/base/Link.astro'
-import { SITE } from '~/config'
 
 const currentYear = new Date().getFullYear()
-const copyrightText = `© ${currentYear} ${SITE.author}`
+const copyrightHolder = '蓝厘榨只因'
 ---
 
 <footer class="slide-enter animate-delay-1600! px-7 mt-auto mb-8">
   <div class="prose mx-auto op-50">
     <div class="flex lt-sm:flex-col items-center text-sm whitespace-nowrap">
-      <span>{copyrightText}</span>
+      <span>© {currentYear} {copyrightHolder}</span>
       <span class="lt-sm:hidden">&nbsp;|&nbsp;</span>
       <span>
         Powered by
@@ -22,6 +21,21 @@ const copyrightText = `© ${currentYear} ${SITE.author}`
           Astro AntfuStyle Theme
         </Link>
       </span>
+    </div>
+    <div
+      class="mt-1 flex lt-sm:flex-col justify-center items-center text-xs whitespace-nowrap"
+    >
+      <Link class="op-100!" href="https://beian.miit.gov.cn/" external={true}>
+        粤ICP备2026019032号
+      </Link>
+      <span class="lt-sm:hidden mx-1">&nbsp;|&nbsp;</span>
+      <Link
+        class="op-100!"
+        href="https://beian.mps.gov.cn/#/query/webSearch?code=44010502003920"
+        external={true}
+      >
+        粤公网安备44010502003920号
+      </Link>
     </div>
   </div>
 </footer>
