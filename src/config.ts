@@ -133,7 +133,7 @@ export const UI: Ui = {
 export const FEATURES: Features = {
   slideEnterAnim: [true, { enterStep: 80 }],
   ogImage: [
-    true,
+    false,
     {
       authorOrBrand: `${SITE.title}`,
       fallbackTitle: `${SITE.description}`,
