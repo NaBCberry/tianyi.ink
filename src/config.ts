@@ -6,7 +6,7 @@ export const SITE: Site = {
   title: 'Astro AntfuStyle Theme',
   description:
     'A customizable, feature-rich Astro theme for blog and portfolio creation',
-  author: 'Stephanie Lin',
+  author: '蓝厘榨只因',
   lang: 'zh',
   ogLocale: 'zh_CN',
   imageDomains: ['cdn.bsky.app', 'images.unsplash.com'],
