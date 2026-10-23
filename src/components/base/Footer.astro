@@ -7,35 +7,43 @@ const copyrightHolder = '蓝厘榨只因'
 
 <footer class="slide-enter animate-delay-1600! px-7 mt-auto mb-8">
   <div class="prose mx-auto op-50">
-    <div class="flex lt-sm:flex-col items-center text-sm whitespace-nowrap">
-      <span>© {currentYear} {copyrightHolder}</span>
-      <span class="lt-sm:hidden">&nbsp;|&nbsp;</span>
-      <span>
-        Powered by
-        {' '}
+    <div class="flex flex-col items-center gap-1 text-sm whitespace-nowrap">
+      <div class="flex lt-sm:flex-col items-center">
+        <span>© {currentYear} {copyrightHolder}</span>
+        <span class="lt-sm:hidden">&nbsp;|&nbsp;</span>
+        <span>
+          Powered by
+          {' '}
+          <Link
+            class="op-100! color-[--fg]!"
+            href="https://github.com/lin-stephanie/astro-antfustyle-theme"
+            external={true}
+          >
+            Astro AntfuStyle Theme
+          </Link>
+        </span>
+      </div>
+      <div class="flex lt-sm:flex-col items-center">
         <Link
-          class="op-100! color-[--fg]!"
-          href="https://github.com/lin-stephanie/astro-antfustyle-theme"
+          class="op-100!"
+          href="https://beian.miit.gov.cn/"
           external={true}
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          Astro AntfuStyle Theme
+          粤ICP备2026019032号
         </Link>
-      </span>
-    </div>
-    <div
-      class="mt-1 flex lt-sm:flex-col justify-center items-center text-xs whitespace-nowrap"
-    >
-      <Link class="op-100!" href="https://beian.miit.gov.cn/" external={true}>
-        粤ICP备2026019032号
-      </Link>
-      <span class="lt-sm:hidden mx-1">&nbsp;|&nbsp;</span>
-      <Link
-        class="op-100!"
-        href="https://beian.mps.gov.cn/#/query/webSearch?code=44010502003920"
-        external={true}
-      >
-        粤公网安备44010502003920号
-      </Link>
+        <span class="lt-sm:hidden">&nbsp;|&nbsp;</span>
+        <Link
+          class="op-100!"
+          href="https://beian.mps.gov.cn/#/query/webSearch?code=44010502003920"
+          external={true}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          粤公网安备44010502003920号
+        </Link>
+      </div>
     </div>
   </div>
 </footer>
