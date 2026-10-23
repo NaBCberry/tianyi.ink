@@ -3,10 +3,9 @@ import type { Site, Ui, Features } from './types'
 export const SITE: Site = {
   website: 'https://tianyi.ink/',
   base: '/',
-  title: 'Astro AntfuStyle Theme',
-  description:
-    'A customizable, feature-rich Astro theme for blog and portfolio creation',
-  author: '蓝厘榨只因',
+  title: '技术与光影手记',
+  description: '野生的露营地',
+  author: 'NaBCberry',
   lang: 'zh',
   ogLocale: 'zh_CN',
   imageDomains: ['cdn.bsky.app', 'images.unsplash.com'],
