@@ -1,15 +1,16 @@
 ---
 import Link from '~/components/base/Link.astro'
+import { SITE } from '~/config'
 
 const currentYear = new Date().getFullYear()
-const copyrightHolder = '蓝厘榨只因'
+const copyrightText = `© ${currentYear} ${SITE.author}`
 ---
 
 <footer class="slide-enter animate-delay-1600! px-7 mt-auto mb-8">
   <div class="prose mx-auto op-50">
     <div class="flex flex-col items-center gap-1 text-sm whitespace-nowrap">
       <div class="flex lt-sm:flex-col items-center">
-        <span>© {currentYear} {copyrightHolder}</span>
+        <span>{copyrightText}</span>
         <span class="lt-sm:hidden">&nbsp;|&nbsp;</span>
         <span>
           Powered by
