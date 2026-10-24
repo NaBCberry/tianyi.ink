@@ -83,7 +83,7 @@ export default defineConfig({
       fallbacks: sansFallbacks,
     },
     {
-      provider: fontProviders.google(),
+      provider: fontProviders.fontsource(),
       name: 'Inter',
       cssVariable: '--font-og-sans',
       weights: [400],
@@ -91,13 +91,6 @@ export default defineConfig({
       subsets: ['latin'],
       formats: ['woff'],
       fallbacks: sansFallbacks,
-      options: {
-        experimental: {
-          variableAxis: {
-            opsz: ['24'],
-          },
-        },
-      },
     },
   ],
   image: {
